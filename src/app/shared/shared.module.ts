@@ -1,15 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-//Aqui se deberian importar los componentes de shared, SideBar, MediaPlayer y HeaderUser
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { MediaPlayerComponent } from '../shared/components/media-player/media-player.component';
+import { HeaderUserComponent } from '../shared/components/header-user/header-user.component';
+
 
 
 
 @NgModule({
   declarations: [
-    //Aqui se deberian declarar los componentes de shared, SideBar, MediaPlayer y HeaderUser
+    //TODO: ver el tema de las declaratrions
   ],
   imports: [
-    CommonModule
+    SideBarComponent,
+    MediaPlayerComponent,
+    HeaderUserComponent,
+    CommonModule,
+  ],
+  exports: [
+    SideBarComponent,
+    MediaPlayerComponent,
+    HeaderUserComponent,
+    CommonModule,
   ]
 })
 export class SharedModule { }
