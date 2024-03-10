@@ -3,7 +3,7 @@ import { HomePageComponent } from './modules/home/pages/home-page/home-page.comp
 
 export const routes: Routes = [
     {
-        path:'auth', //TODO: El login
+        path:'auth', 
         loadChildren: () =>import('./modules/auth/auth.module').then(m => m.AuthModule)
     },
     {
