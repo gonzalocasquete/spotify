@@ -41,7 +41,11 @@
       </div>
       <div>Ocurrio un error con tu email o password</div>
       <div class="form-action">
-        <button [disabled]="formLogin.invalid" class="login social-btn">
+        <button
+          [disabled]="formLogin.invalid"
+          [ngClass]="{ pointer: formLogin.valid }"
+          class="login social-btn"
+        >
           Iniciar sesión
         </button>
       </div>

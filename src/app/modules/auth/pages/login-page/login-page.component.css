@@ -115,3 +115,7 @@ el touched nos asegura que ha tenido que ser tocada */
 input.ng-valid.ng-touched {
   border: solid 2px rgb(53, 164, 60) !important;
 }
+
+.pointer {
+  cursor: pointer;
+}
